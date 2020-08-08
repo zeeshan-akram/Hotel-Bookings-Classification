@@ -6,3 +6,5 @@
 * Perform feature engineering.
 * Built model and optimize it.
 * Built client facing API using flask.
+## Code and Resources Used
+**Python Version:** 3.7
