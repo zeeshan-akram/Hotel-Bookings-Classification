@@ -29,5 +29,27 @@ I checked bookings ratio, seasonal bookings, bookings from different country, ma
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/payments-market-segments.png)
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/rooms-price.png)
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/special-request.png)
-![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/non-stay-bookings.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/non-stay-bookings.png)<br>
 **For more visuals check source code**
+## Feature Engineering
+After EDA I perform feature engineering modeling. Incorrect or inconsistent data leads to false conclusions. And so, I selected only important features.
+I perform following operations
+
+* Check Pearson correlation.
+  * Removed correlated predictors to reduce multicolinearity.
+  * Removed features with very low correlation with target variable.
+* Perform label and One hot encoding.
+* Scale down data with Min Max Scaler.
+## Model Building 
+First I split data into train and test data then use Boosting and Bagging techniques.<br>
+**Bagging** takes the advantage of ensemble learning wherein multiple weak learner outperform a single strong learner. It helps reduce variance and thus helps us avoid overfitting.<br>
+**Boosting** algorithms seek to improve the prediction power by training a sequence of weak models, each compensating the weaknesses of its predecessors.<br>
+## Model Performance
+Random Forest outperforms of all models.<br>
+* XGBoost: Accuracy = 83.81%
+* Decision Tree: Accuracy = 81.71%
+* LGBM : Accuracy = 82.90%
+* Random Forest: Accuracy = 84.68 % <br>
+<p> I selected Random Forest </p>
+##### After Performing Hyperparameter Tuning:
+Random Accuracy increased to 85.91%.
