@@ -51,5 +51,5 @@ Random Forest outperforms of all models.<br>
 * LGBM : Accuracy = 82.90%
 * Random Forest: Accuracy = 84.68 % <br>
 <p> I selected Random Forest </p>
-##### After Performing Hyperparameter Tuning:
-Random Accuracy increased to 85.91%.
+**After Performing Hyperparameter Tuning:**<br>
+Random Forest Accuracy = 85.91%.
