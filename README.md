@@ -30,3 +30,4 @@ I checked bookings ratio, seasonal bookings, bookings from different country, ma
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/rooms-price.png)
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/special-request.png)
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/non-stay-bookings.png)
+**For more visuals check source code**
