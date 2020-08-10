@@ -50,6 +50,6 @@ Random Forest outperforms of all models.<br>
 * Decision Tree: Accuracy = 81.71%
 * LGBM : Accuracy = 82.90%
 * Random Forest: Accuracy = 84.68 % <br>
-<p> I selected Random Forest </p>
+I selected Random Forest<br>
 **After Performing Hyperparameter Tuning:**<br>
 Random Forest Accuracy = 85.91%.
