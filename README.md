@@ -13,3 +13,11 @@
 **About Classification Problems:** [Article](https://towardsdatascience.com/machine-learning-classifiers-a5cc4e1b0623) <br>
 **GitHub Markdown:** [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) <br>
 ## Data Cleaning
+The first thing i've done after getting data is data cleaning. It is very important after cleansing data we can perform EDA and later modeling.<br>
+**Handled Missing Values:** 
+* Handled missing categorical values by grouping related features.
+* Handled some numerical categorical missing values.
+## Exploratory Data Analysis
+I checked bookings ratio, seasonal bookings, bookings from different country, markets and distrbutions channel.<br>
+**Some Visuals:**
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/change-in-price.png)
