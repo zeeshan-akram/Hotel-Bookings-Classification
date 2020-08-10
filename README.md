@@ -19,5 +19,14 @@ The first thing i've done after getting data is data cleaning. It is very import
 * Handled some numerical categorical missing values.
 ## Exploratory Data Analysis
 I checked bookings ratio, seasonal bookings, bookings from different country, markets and distrbutions channel.<br>
-**Some Visuals:**
+**Some Visuals:**<br>
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/perc-booking-cancel-booking.png)
 ![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/change-in-price.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/month-reservations.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/market-segments.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/daily-bookings.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/country-bookings.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/payments-market-segments.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/rooms-price.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/special-request.png)
+![deleted or not found](https://github.com/zeeshan-akram/Hotel-Bookings-Classification/blob/master/non-stay-bookings.png)
