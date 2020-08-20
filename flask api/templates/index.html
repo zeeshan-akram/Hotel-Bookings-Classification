@@ -1,0 +1,131 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<h1>Home Page</h1>
+<br>
+<div class="card">
+    <div class="container">
+        <h2>Will client cancel booking?</h2>
+    </div>
+
+</div>
+<br>
+<div class="card">
+    <div class="container">
+        <h3>Enter Numerical Data:</h3>
+        <form action="/prediction" method="POST">
+            Lead Time: <input type="number" min='0' name='lead_time' id='lead_time' required
+                placeholder="number of days from booking to arrival">
+            &nbsp
+            Previous Cancellations: <input type="number" min='0' name='previous_cancellations'
+                id='previous_cancellations' required placeholder="Number of cancellations">
+            &nbsp
+            Booking Changes: <input type='number' name='booking_changes' id='booking_changes' required
+                placeholder="number of change bookings">
+            <br>
+            <br>
+            Required Parking Spaces: <input type="number" min='0' name="required_car_parking_spaces"
+                id='required_car_parking_spaces' required placeholder="number of parkings">
+            &nbsp
+            Special Requests : <input type="number" min='0' name="total_of_special_requests"
+                id='total_of_special_requests' required placeholder="number of requests">
+            &nbsp
+            Country : <input type="string" name="country" id='country' required
+                placeholder="Enter three-letter country abbreviation">
+            <br>
+            <br>
+            <a href="/countries">Check countries list</a>
+            <hr>
+            <h3> Enter Categorical Information: </h3>
+            <hr>
+            Hotel: <select id="hotel" name="hotel">
+                <option value="Resort Hotel">Resort Hotel</option>
+                <option value="City Hotel">City Hotel</option>
+            </select>
+            &nbsp
+            &nbsp
+            Meal: <select id="meal" name="meal">
+                <option value="BB">BB</option>
+                <option value="FB">FB</option>
+                <option value="HB">HB</option>
+                <option value="SC">SC</option>
+                <option value="Undefined">Undefined</option>
+            </select>
+            &nbsp
+            &nbsp
+            Market Segment: <select id="market_segment" name="market_segment">
+                <option value="Direct">Direct</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Online TA">Online TA</option> 
+                <option value="Offline TA/TO">Offline TA/TO</option>
+                <option value="Complementary">Complementary</option>
+                <option value="Groups">Groups</option>
+                <option value="Undefined">Undefined</option>
+                <option value="Aviation">Aviation</option>
+            </select>
+            Distribution Channel: <select id="distribution_channel" name="distribution_channel">
+                <option value='Direct'>Direct</option>
+                <option value='Corporate'>Corporate</option>
+                <option value='TA/TO'>TA/TO</option>
+                <option value='Undefined'>Undefined</option>
+                <option value='GDS'>GDS</option>
+            </select>
+            <br>
+            <br>
+            Reserved Room Type: <select id="reserved_room_type" name="reserved_room_type">
+                <option value='A'>A</option>
+                <option value='B'>B</option>
+                <option value='C'>C</option>
+                <option value='D'>D</option>
+                <option value='E'>E</option>
+                <option value='F'>F</option>
+                <option value='G'>G</option>
+                <option value='H'>H</option>
+                <option value='L'>L</option>
+                <option value='P'>P</option>
+            </select>
+            &nbsp
+            &nbsp
+            Assigned Room Type: <select id="assigned_room_type" name="assigned_room_type">
+                <option value='A'>A</option>
+                <option value='B'>B</option>
+                <option value='C'>C</option>
+                <option value='D'>D</option>
+                <option value='E'>E</option>
+                <option value='F'>F</option>
+                <option value='G'>G</option>
+                <option value='H'>H</option>
+                <option value='I'>I</option>
+                <option value='K'>K</option>
+                <option value='L'>L</option>
+                <option value='P'>P</option>
+            </select>
+            &nbsp
+            &nbsp
+            Deposit Type: <select id="deposit_type" name="deposit_type">
+                <option value='No Deposit'>No Deposit</option>
+                <option value='Refundable'>Refundable</option>
+                <option value='Non Refund'>Non Refund</option>
+            </select>
+            Customer Type: <select id="customer_type" name="customer_type">
+                <option value='Transient'>Transient</option>
+                <option value='Contract'>Contract</option>
+                <option value='Transient-Party'>Transient-Party</option>
+                <option value='Group'>Group</option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <h3>Prediction</h3>
+            <hr>
+            <br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+
+{% endblock %}

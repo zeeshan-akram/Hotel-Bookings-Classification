@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>Predictions</title>
+{% endblock %}
+
+{% block body %}
+<h1>Predictions Page</h1>
+<br>
+{% if predictions %}
+    <h2>The customer will cancel booking.</h2>
+{% else %}
+    <h2>The customer will not cancel booking.</h2>
+{% endif %}
+<hr>
+
+
+{% endblock %}
