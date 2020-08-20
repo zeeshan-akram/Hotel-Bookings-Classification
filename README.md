@@ -51,4 +51,7 @@ Random Forest outperforms of all models.<br>
 * LGBM : Accuracy = 82.90%
 * Random Forest: Accuracy = 84.68 % <br>
 <p>I selected Random Forest with highest accuracy then perform hyperparameter tuning. After performing hyperparameter tuning.<br>
-Random Forest accuracy increased to 85.91%.
+Random Forest accuracy increased to 85.91%.</p>
+## Productionization
+In this step I built a flask API endpoint. The API takes list of values of different hotel features and predict whether client will cancel booking or not.<br>
+ **Note:** I uploaded trained model pkl files in zip because of limitation of github repository file size(max size: 25mb).
